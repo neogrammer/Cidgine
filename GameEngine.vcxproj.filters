@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="assets">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="source\core">
+      <UniqueIdentifier>{ea4b32b0-d899-4d02-aff7-bfd6516314fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\resources">
+      <UniqueIdentifier>{c6743ba7-7f10-4975-8576-b13b18b8e7b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\resources\tpl">
+      <UniqueIdentifier>{6554d303-3476-4707-a1b5-e769e77a2b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\textures">
+      <UniqueIdentifier>{8ec9907b-42de-473c-9172-e1ceced26ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\fonts">
+      <UniqueIdentifier>{4cda423b-ab85-4dd2-937b-36feda526725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\sounds">
+      <UniqueIdentifier>{17779168-8af1-4fa4-ac1e-829a13c9d008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\music">
+      <UniqueIdentifier>{0414ecf7-4cee-4da7-a829-e10c5ac0669e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{00b85cc2-8f4e-43c9-8dd9-de24586c6ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui">
+      <UniqueIdentifier>{0c04cd86-bacd-46c0-949e-ec80d6dc3af0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\imgui-sfml">
+      <UniqueIdentifier>{67068ee8-bda4-4178-ad5d-7a657c590282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\world">
+      <UniqueIdentifier>{17aa6092-8bea-4e74-8a0a-663abe2cbf60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\game">
+      <UniqueIdentifier>{711ec2e7-d764-46b0-9d2a-0e446650e7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\sfml3">
+      <UniqueIdentifier>{fdc5a6e0-488a-45fe-9bec-c7b524110630}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\resources\Assets.cpp">
+      <Filter>source\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui_demo.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui_draw.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui_tables.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui\imgui_widgets.cpp">
+      <Filter>third_party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\imgui-sfml\imgui-SFML.cpp">
+      <Filter>third_party\imgui-sfml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\Thing.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\DThing.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\DUThing.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\UThing.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\resources\tpl\ResourceManager.tpl">
+      <Filter>source\resources\tpl</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\resources\ResourceManager.hpp">
+      <Filter>source\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="source\resources\Assets.hpp">
+      <Filter>source\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui\imconfig.h">
+      <Filter>third_party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui\imgui.h">
+      <Filter>third_party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui\imgui_internal.h">
+      <Filter>third_party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui\imstb_rectpack.h">
+      <Filter>third_party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui\imstb_textedit.h">
+      <Filter>third_party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui\imstb_truetype.h">
+      <Filter>third_party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui-sfml\imconfig-SFML.h">
+      <Filter>third_party\imgui-sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui-sfml\imgui-SFML.h">
+      <Filter>third_party\imgui-sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\imgui-sfml\imgui-SFML_export.h">
+      <Filter>third_party\imgui-sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="source\core\Updateable.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\core\Drawable.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\core\Thing.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\core\DThing.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\core\DUThing.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\core\UThing.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\fonts\bubbly.ttf">
+      <Filter>assets\fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\music\music_8bit.mp3">
+      <Filter>assets\music</Filter>
+    </Media>
+    <Media Include="assets\music\music_explore.mp3">
+      <Filter>assets\music</Filter>
+    </Media>
+    <Media Include="assets\music\music_retro1.mp3">
+      <Filter>assets\music</Filter>
+    </Media>
+    <Media Include="assets\sounds\pew.mp3">
+      <Filter>assets\sounds</Filter>
+    </Media>
+    <Media Include="assets\sounds\wow.mp3">
+      <Filter>assets\sounds</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\textures\invariant.png">
+      <Filter>assets\textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
