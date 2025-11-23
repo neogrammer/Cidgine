@@ -48,6 +48,12 @@
     <Filter Include="third_party\sfml3">
       <UniqueIdentifier>{fdc5a6e0-488a-45fe-9bec-c7b524110630}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\world\Sprite">
+      <UniqueIdentifier>{36bfbc04-1ed2-4850-b8dc-0ad5575696bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\data">
+      <UniqueIdentifier>{e6659e58-5ff6-44c7-8cf5-b742452fa9fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -86,10 +92,28 @@
     <ClCompile Include="source\core\UThing.cpp">
       <Filter>source\core</Filter>
     </ClCompile>
+    <ClCompile Include="CidSprite.cpp">
+      <Filter>source\world\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedSprite.cpp">
+      <Filter>source\world\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>source\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\world\Tilemap.cpp">
+      <Filter>source\world</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="source\resources\tpl\ResourceManager.tpl">
       <Filter>source\resources\tpl</Filter>
+    </None>
+    <None Include="assets\data\tilemaps\Tilemap1.tmap">
+      <Filter>assets\data</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +168,27 @@
     <ClInclude Include="source\core\UThing.hpp">
       <Filter>source\core</Filter>
     </ClInclude>
+    <ClInclude Include="CidSprite.hpp">
+      <Filter>source\world\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimFrameData.hpp">
+      <Filter>source\world\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimData.hpp">
+      <Filter>source\world\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedSprite.hpp">
+      <Filter>source\world\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.hpp">
+      <Filter>source\world</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.hpp">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\world\Tilemap.hpp">
+      <Filter>source\world</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Font Include="assets\fonts\bubbly.ttf">
@@ -169,6 +214,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\textures\invariant.png">
+      <Filter>assets\textures</Filter>
+    </Image>
+    <Image Include="assets\textures\tilesets\tileset1.png">
       <Filter>assets\textures</Filter>
     </Image>
   </ItemGroup>

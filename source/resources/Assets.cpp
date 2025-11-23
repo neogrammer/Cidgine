@@ -132,6 +132,8 @@ void Assets::initTextures()
 {
 	
 	textures.load((int)Assets::Textures::Invariant, "assets/textures/invariant.png");
+	textures.load((int)Assets::Textures::Tileset1, "assets/textures/tilesets/tileset1.png");
+
 
 }
 

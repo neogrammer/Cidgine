@@ -7,7 +7,7 @@
 
 
 #include <resources/Assets.hpp>
-
+#include <world/Tilemap.hpp>
 
 
 int main() {
@@ -22,9 +22,13 @@ int main() {
     guiWin.setVerticalSyncEnabled(true);
 
     auto good = ImGui::SFML::Init(guiWin);
-
-
     Assets::Initialize();
+
+    Tilemap tilemap{};
+    tilemap.loadMap("assets/data/tilemaps/Tilemap1.tmap", Assets::Textures::Tileset1);
+
+
+ 
     sf::Clock deltaClock;
 	sf::Time deltaTime;
     // Start the game loop
@@ -72,6 +76,20 @@ int main() {
                 }
             }
 
+
+            if (window.isOpen())
+            {
+                // Remainder of main loop
+                { auto isset = window.setActive(true); }
+
+                window.clear();
+
+				tilemap.drawMap(window, sf::Vector2f{ 800.f, 450.f });
+
+                window.display();
+            }
+
+
             if (guiWin.isOpen())
             {
                 { auto isset = guiWin.setActive(true); }
@@ -97,7 +115,7 @@ int main() {
                         }
                     }
                 }
-            
+
                 ImGui::SFML::Update(guiWin, deltaTime);
 
 
@@ -110,16 +128,6 @@ int main() {
                 ImGui::SFML::Render(guiWin);
 
                 guiWin.display();
-            }
-
-            if (window.isOpen())
-            {
-                // Remainder of main loop
-                { auto isset = window.setActive(true); }
-
-                window.clear();
-
-                window.display();
             }
 
         }
@@ -178,6 +186,9 @@ int main() {
 
 
                 window.clear();
+
+                
+                tilemap.drawMap(window, sf::Vector2f{ 800.f, 450.f });
 
                 ImGui::SFML::Render(window);
 
