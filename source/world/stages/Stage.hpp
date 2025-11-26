@@ -1,5 +1,5 @@
 #include <list>
-#include "CidSprite.hpp"
+#include <world/sprites/CidSprite.hpp>
 #include "Globals.hpp"
 #include <vector>
 #include <SFML/Graphics/View.hpp>

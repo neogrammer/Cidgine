@@ -3,11 +3,13 @@
 #include <Windows.h>
 #include "../third_party/imgui-sfml/imgui-SFML.h"
 #include "../third_party/imgui/imgui.h"
-
+#include <Globals.hpp>
 
 
 #include <resources/Assets.hpp>
-#include <world/Tilemap.hpp>
+#include <world/maps/Tilemap.hpp>
+#include <world/maps/Isomap.hpp>
+
 
 
 int main() {
@@ -18,6 +20,7 @@ int main() {
     
     sf::RenderWindow window(sf::VideoMode{ { 1600U, 900U }, 32U }, "SFML Window");
     sf::RenderWindow guiWin(sf::VideoMode{ { 480U, 640U }, 32U }, "GUI Window");
+    guiWin.setPosition({ window.getPosition().x + glbl::ScrW, window.getPosition().y });
     window.setVerticalSyncEnabled(true);
     guiWin.setVerticalSyncEnabled(true);
 
@@ -26,6 +29,9 @@ int main() {
 
     Tilemap tilemap{};
     tilemap.loadMap("assets/data/tilemaps/Tilemap1.tmap", Assets::Textures::Tileset1);
+
+    Isomap isomap{};
+    isomap.loadMap("assets/data/tilemaps/Isomap1.imp", Assets::Textures::IsoTileset_Basic);
 
 
  
@@ -46,6 +52,8 @@ int main() {
 
                 window.create(sf::VideoMode{ { 1600U, 900U }, 32U }, "SFML Window");
                 guiWin.create(sf::VideoMode{ { 480U, 640U }, 32U }, "GUI Window");
+                guiWin.setPosition({ window.getPosition().x + glbl::ScrW, window.getPosition().y });
+                   
                 needsRebuilding = false;
                 window.setVerticalSyncEnabled(true);
                 guiWin.setVerticalSyncEnabled(true);
@@ -84,7 +92,8 @@ int main() {
 
                 window.clear();
 
-				tilemap.drawMap(window, sf::Vector2f{ 800.f, 450.f });
+				//tilemap.drawMap(window, sf::Vector2f{ 800.f, 450.f });
+                isomap.drawMap(window, sf::Vector2f{ 800.f, 450.f });
 
                 window.display();
             }
@@ -143,7 +152,7 @@ int main() {
 
                 needsRebuilding = false;
                 window.setVerticalSyncEnabled(true);
-                window.setActive(true);
+                auto maybe = window.setActive(true);
             }
 
 
@@ -188,7 +197,8 @@ int main() {
                 window.clear();
 
                 
-                tilemap.drawMap(window, sf::Vector2f{ 800.f, 450.f });
+                //tilemap.drawMap(window, sf::Vector2f{ 800.f, 450.f });
+                isomap.drawMap(window, sf::Vector2f{ 800.f, 450.f });
 
                 ImGui::SFML::Render(window);
 

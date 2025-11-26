@@ -2,11 +2,19 @@
 
 AnimatedSprite::AnimatedSprite()
 	: CidSprite{}
+	, animNum{}
+	, frameNum{}
+	, frameTime{}
+	, animFPS{ 10.f }
 {
 }
 
 AnimatedSprite::AnimatedSprite(Assets::Textures texId_, sf::Vector2f pos_, sf::Vector2f size_, sf::IntRect texRect_, sf::Vector2f texOff_, int drawOrder_)
 	: CidSprite{texId_, pos_, size_, texRect_, texOff_, drawOrder_}
+	, animNum{}
+	, frameNum{}
+	, frameTime{}
+	, animFPS{ 10.f }
 {
 }
 

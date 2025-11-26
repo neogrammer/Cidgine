@@ -139,17 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AnimatedSprite.cpp" />
-    <ClCompile Include="CidSprite.cpp" />
-    <ClCompile Include="Globals.cpp" />
     <ClCompile Include="source\core\DThing.cpp" />
     <ClCompile Include="source\core\DUThing.cpp" />
     <ClCompile Include="source\core\Thing.cpp" />
     <ClCompile Include="source\core\UThing.cpp" />
+    <ClCompile Include="source\Globals.cpp" />
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\resources\Assets.cpp" />
-    <ClCompile Include="source\world\Tilemap.cpp" />
-    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="source\world\maps\Isomap.cpp" />
+    <ClCompile Include="source\world\maps\Tilemap.cpp" />
+    <ClCompile Include="source\world\sprites\AnimatedSprite.cpp" />
+    <ClCompile Include="source\world\sprites\CidSprite.cpp" />
+    <ClCompile Include="source\world\stages\Stage.cpp" />
     <ClCompile Include="third_party\imgui-sfml\imgui-SFML.cpp" />
     <ClCompile Include="third_party\imgui\imgui.cpp" />
     <ClCompile Include="third_party\imgui\imgui_demo.cpp" />
@@ -158,25 +159,27 @@
     <ClCompile Include="third_party\imgui\imgui_widgets.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="assets\data\tilemaps\Isomap1.imp" />
     <None Include="assets\data\tilemaps\Tilemap1.tmap" />
     <None Include="source\resources\tpl\ResourceManager.tpl" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AnimatedSprite.hpp" />
-    <ClInclude Include="AnimData.hpp" />
-    <ClInclude Include="AnimFrameData.hpp" />
-    <ClInclude Include="CidSprite.hpp" />
-    <ClInclude Include="Globals.hpp" />
     <ClInclude Include="source\core\Drawable.hpp" />
     <ClInclude Include="source\core\DThing.hpp" />
     <ClInclude Include="source\core\DUThing.hpp" />
     <ClInclude Include="source\core\Thing.hpp" />
     <ClInclude Include="source\core\Updateable.hpp" />
     <ClInclude Include="source\core\UThing.hpp" />
+    <ClInclude Include="source\Globals.hpp" />
     <ClInclude Include="source\resources\Assets.hpp" />
     <ClInclude Include="source\resources\ResourceManager.hpp" />
-    <ClInclude Include="source\world\Tilemap.hpp" />
-    <ClInclude Include="Stage.hpp" />
+    <ClInclude Include="source\world\maps\Isomap.hpp" />
+    <ClInclude Include="source\world\maps\Tilemap.hpp" />
+    <ClInclude Include="source\world\sprites\AnimatedSprite.hpp" />
+    <ClInclude Include="source\world\sprites\AnimData.hpp" />
+    <ClInclude Include="source\world\sprites\CidSprite.hpp" />
+    <ClInclude Include="source\world\sprite\AnimFrameData.hpp" />
+    <ClInclude Include="source\world\stages\Stage.hpp" />
     <ClInclude Include="third_party\imgui-sfml\imconfig-SFML.h" />
     <ClInclude Include="third_party\imgui-sfml\imgui-SFML.h" />
     <ClInclude Include="third_party\imgui-sfml\imgui-SFML_export.h" />
@@ -199,7 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\textures\invariant.png" />
+    <Image Include="assets\textures\tilesets\blocksTileSheet.png" />
     <Image Include="assets\textures\tilesets\tileset1.png" />
+    <Image Include="assets\textures\tilesets\zelda_more.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

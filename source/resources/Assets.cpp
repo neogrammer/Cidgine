@@ -133,6 +133,10 @@ void Assets::initTextures()
 	
 	textures.load((int)Assets::Textures::Invariant, "assets/textures/invariant.png");
 	textures.load((int)Assets::Textures::Tileset1, "assets/textures/tilesets/tileset1.png");
+	textures.load((int)Assets::Textures::Tileset_Grass, "assets/textures/tilesets/zelda_more.png");
+	textures.load((int)Assets::Textures::IsoTileset_Basic, "assets/textures/tilesets/blocksTileSheet.png");
+
+
 
 
 }

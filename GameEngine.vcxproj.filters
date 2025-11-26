@@ -42,17 +42,20 @@
     <Filter Include="source\world">
       <UniqueIdentifier>{17aa6092-8bea-4e74-8a0a-663abe2cbf60}</UniqueIdentifier>
     </Filter>
-    <Filter Include="source\game">
-      <UniqueIdentifier>{711ec2e7-d764-46b0-9d2a-0e446650e7dd}</UniqueIdentifier>
-    </Filter>
     <Filter Include="third_party\sfml3">
       <UniqueIdentifier>{fdc5a6e0-488a-45fe-9bec-c7b524110630}</UniqueIdentifier>
     </Filter>
-    <Filter Include="source\world\Sprite">
-      <UniqueIdentifier>{36bfbc04-1ed2-4850-b8dc-0ad5575696bc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="assets\data">
       <UniqueIdentifier>{e6659e58-5ff6-44c7-8cf5-b742452fa9fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\world\stages">
+      <UniqueIdentifier>{994bd4da-cfd8-4cad-bf8a-a0f83c275f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\world\sprites">
+      <UniqueIdentifier>{36bfbc04-1ed2-4850-b8dc-0ad5575696bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\world\maps">
+      <UniqueIdentifier>{4c2378f8-5203-4a6f-bac7-7a7073c7f0cd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -92,20 +95,23 @@
     <ClCompile Include="source\core\UThing.cpp">
       <Filter>source\core</Filter>
     </ClCompile>
-    <ClCompile Include="CidSprite.cpp">
-      <Filter>source\world\Sprite</Filter>
-    </ClCompile>
-    <ClCompile Include="AnimatedSprite.cpp">
-      <Filter>source\world\Sprite</Filter>
-    </ClCompile>
-    <ClCompile Include="Stage.cpp">
-      <Filter>source\world</Filter>
-    </ClCompile>
-    <ClCompile Include="Globals.cpp">
+    <ClCompile Include="source\Globals.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="source\world\Tilemap.cpp">
-      <Filter>source\world</Filter>
+    <ClCompile Include="source\world\maps\Tilemap.cpp">
+      <Filter>source\world\maps</Filter>
+    </ClCompile>
+    <ClCompile Include="source\world\stages\Stage.cpp">
+      <Filter>source\world\stages</Filter>
+    </ClCompile>
+    <ClCompile Include="source\world\sprites\AnimatedSprite.cpp">
+      <Filter>source\world\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="source\world\sprites\CidSprite.cpp">
+      <Filter>source\world\sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="source\world\maps\Isomap.cpp">
+      <Filter>source\world\maps</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +119,9 @@
       <Filter>source\resources\tpl</Filter>
     </None>
     <None Include="assets\data\tilemaps\Tilemap1.tmap">
+      <Filter>assets\data</Filter>
+    </None>
+    <None Include="assets\data\tilemaps\Isomap1.imp">
       <Filter>assets\data</Filter>
     </None>
   </ItemGroup>
@@ -168,26 +177,29 @@
     <ClInclude Include="source\core\UThing.hpp">
       <Filter>source\core</Filter>
     </ClInclude>
-    <ClInclude Include="CidSprite.hpp">
-      <Filter>source\world\Sprite</Filter>
-    </ClInclude>
-    <ClInclude Include="AnimFrameData.hpp">
-      <Filter>source\world\Sprite</Filter>
-    </ClInclude>
-    <ClInclude Include="AnimData.hpp">
-      <Filter>source\world\Sprite</Filter>
-    </ClInclude>
-    <ClInclude Include="AnimatedSprite.hpp">
-      <Filter>source\world\Sprite</Filter>
-    </ClInclude>
-    <ClInclude Include="Stage.hpp">
-      <Filter>source\world</Filter>
-    </ClInclude>
-    <ClInclude Include="Globals.hpp">
+    <ClInclude Include="source\Globals.hpp">
       <Filter>source</Filter>
     </ClInclude>
-    <ClInclude Include="source\world\Tilemap.hpp">
-      <Filter>source\world</Filter>
+    <ClInclude Include="source\world\sprite\AnimFrameData.hpp">
+      <Filter>source\world\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="source\world\maps\Tilemap.hpp">
+      <Filter>source\world\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="source\world\stages\Stage.hpp">
+      <Filter>source\world\stages</Filter>
+    </ClInclude>
+    <ClInclude Include="source\world\sprites\AnimatedSprite.hpp">
+      <Filter>source\world\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="source\world\sprites\AnimData.hpp">
+      <Filter>source\world\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="source\world\sprites\CidSprite.hpp">
+      <Filter>source\world\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="source\world\maps\Isomap.hpp">
+      <Filter>source\world\maps</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +229,12 @@
       <Filter>assets\textures</Filter>
     </Image>
     <Image Include="assets\textures\tilesets\tileset1.png">
+      <Filter>assets\textures</Filter>
+    </Image>
+    <Image Include="assets\textures\tilesets\zelda_more.png">
+      <Filter>assets\textures</Filter>
+    </Image>
+    <Image Include="assets\textures\tilesets\blocksTileSheet.png">
       <Filter>assets\textures</Filter>
     </Image>
   </ItemGroup>

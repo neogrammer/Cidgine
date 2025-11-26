@@ -10,6 +10,15 @@ namespace glbl
 	extern int TileW;
 	extern int TileH;
 
+	extern int IsoTileW;
+	extern int IsoTileH;
+
+	extern int CellWidth;
+	extern int CellHeight;
+
+	extern int WorldOffsetX;
+	extern int WorldOffsetY;
+
 }
 
 #endif

@@ -187,7 +187,7 @@ struct Assets
 	static void Initialize();
 
 	// Resource Enums 
-	enum class Textures : int { Tileset1, Invariant, Count };
+	enum class Textures : int { IsoTileset_Basic, Tileset_Grass, Tileset1, Invariant, Count };
 	enum class Fonts : int {  Invariant, Count };
 	enum class Music : int { Invariant, Count };
 	enum class Sounds : int { Invariant, Count };
